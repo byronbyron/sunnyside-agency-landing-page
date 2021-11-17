@@ -73,7 +73,7 @@
 
         @include media-breakpoint-up(lg) {
             + .nav-item {
-                margin-left: 2rem;
+                margin-left: 2.5rem;
             }
         }
     }
@@ -87,6 +87,12 @@
 
         @include media-breakpoint-up(lg) {
             color: $white;
+            transition: transform 0.15s ease-in-out;
+
+            &:hover,
+            &:active {
+                transform: scale3d(1.1, 1.1, 1);
+            }
         }
     }
 
@@ -95,6 +101,7 @@
         font-family: $headings-font-family;
         display: inline-block;
         margin-top: 1rem;
+        padding: 1rem 1.75rem;
         border-radius: 3rem;
         text-transform: uppercase;
         color: $black;
@@ -102,7 +109,18 @@
 
         @include media-breakpoint-up(lg) {
             margin-top: 0;
+            padding-left: 1.75rem !important;
+            padding-right: 1.75rem !important;
             background-color: $white;
+            transition: color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out;
+
+            &:hover,
+            &:active {
+                color: $white;
+                background-color: rgba($white, 0.3);
+                transform: none;
+            }
         }
     }
 }
