@@ -1,10 +1,10 @@
 .header {
-    background: url('/images/mobile/image-header.jpg') bottom center no-repeat;
+    background: url('../images/mobile/image-header.jpg') bottom center no-repeat #3ebfff;
     background-size: cover;
     position: relative;
 
     @include media-breakpoint-up(lg) {
-        background-image: url('/images/desktop/image-header.jpg');
+        background-image: url('../images/desktop/image-header.jpg');
     }
 }
 
