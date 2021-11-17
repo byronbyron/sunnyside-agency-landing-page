@@ -2,7 +2,72 @@ body {
     font-family: $font-family-base;
 }
 
-h1 {
-    font-family: $headings-font-family;
+h1,
+h2 {
     font-weight: 900;
+}
+
+.text-md {
+    font-size: 1.125rem;
+}
+
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.p-10 {
+    padding: 15% 10% 10%;
+}
+
+.col-inner {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-link {
+    font-family: $headings-font-family;
+    font-size: 1rem;
+    font-weight: 900;
+    display: inline-block;
+    padding: 1rem 0;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 0.625rem;
+        background-color: $yellow;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 1rem;
+        left: -0.375rem;
+        right: -0.375rem;
+        opacity: 0.4;
+        transition: opacity 0.15s ease-in-out;
+    }
+
+    &:hover,
+    &:active {
+        color: $black;
+
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.more-link--red {
+    &::after {
+        background-color: $red;
+    }
 }
