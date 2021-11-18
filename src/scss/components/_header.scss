@@ -125,7 +125,7 @@
     }
 }
 
-.ratio-1x1 {
+.header.ratio-1x1 {
     --bs-aspect-ratio: 144%;
 
     @include media-breakpoint-up(sm) {
