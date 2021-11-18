@@ -111,3 +111,15 @@ h3 {
         }
     }
 }
+
+.gallery {
+    .ratio-1x1 {
+        @include media-breakpoint-up(lg) {
+            --bs-aspect-ratio: 124.1666%;
+        }
+    }
+
+    img {
+        object-fit: cover;
+    }
+}
