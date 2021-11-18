@@ -23,6 +23,10 @@
 .header__navbar-toggler {
     margin-right: -1rem;
     padding: 1rem;
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem $white;
+    }
 }
 
 .navbar-toggler-icon {
