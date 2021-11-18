@@ -16,7 +16,7 @@
     align-items: baseline;
 
     @include media-breakpoint-up(lg) {
-        padding-top: 1.875rem;
+        padding-top: 2rem;
     }
 }
 
@@ -44,6 +44,10 @@
 
 .header__navbar-collapse {
     z-index: 100;
+
+    @include media-breakpoint-up(lg) {
+        margin-right: 1.5rem;
+    }
 }
 
 .header__navbar-nav {
