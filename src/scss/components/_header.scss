@@ -2,10 +2,10 @@
     background: url('../images/mobile/image-header.jpg') bottom center no-repeat #3ebfff;
     background-size: cover;
     position: relative;
+    height: 100vh;
 
     @include media-breakpoint-up(lg) {
         background-image: url('../images/desktop/image-header.jpg');
-        height: 100vh;
     }
 }
 

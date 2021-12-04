@@ -102,6 +102,22 @@ h3 {
     }
 }
 
+.image-link {
+    overflow: hidden;
+    display: block;
+
+    img {
+        transition: transform 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+        img {
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
+}
+
 .col-image {
     position: relative;
 }
